@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Factura Y&E Enterprise.</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/css/index.css">
+        <script src="src/js/jquery-3.4.1.min.js"></script>
+        <script src="src/js/index.js"></script>
+</head>
+<body class="body">
+    <div class="box-content">
+        <h1 class="company-name">Y&E Enterprise</h1>
+        <h1 class="text-invoice">
+            Factura
+            <h2 class="text-id-invoice" contenteditable="true">#0017</h2>
+        </h1>
+        <div class="info-shipped">
+            <div class="info-left">
+                <h3 class="text-info-left">Fecha de emisión:</h3>
+                <br>
+                <h3 class="text-info-left">Fecha de vencimiento:</h3>
+                <br>
+                <h3 class="text-info-left">Neto:</h3>
+                <br>
+                <h3 class="text-info-left">Moneda:</h3>
+                <div class="info-left-right">
+                    <input class="input-info-left-right" type="date" value="2019-06-17">
+                    <br>
+                    <input class="input-info-left-right" type="date" value="2019-08-17">
+                    <br>
+                    <input class="input-info-left-right" type="tel" value="150.000">
+                    <br>
+                    <input class="input-info-left-right moneda" type="text" value="CO">
+                </div>
+            </div>
+            <div class="info-right">
+                <h3 style="text-align: center;" class="text-info-left">Destinatario</h3>
+                <br>
+                <h3 class="text-info-left">Dirección:</h3>
+                <br>
+                <h3 class="text-info-left">Ciudad:</h3>
+                <br>
+                <h3 class="text-info-left">Codigo postal:</h3>
+                <br>
+                <h3 class="text-info-left">Celular:</h3>
+                <br>
+                <h3 class="text-info-left">Nombre destinatario:</h3>
+                <div class="info-right-right">
+                    <input class="input-info-right-right" type="text" value="Carrera 72 #43-125">
+                    <br>
+                    <input class="input-info-right-right" type="text" value="Barranquilla - Colombia">
+                    <br>
+                    <input class="input-info-right-right" type="text" value="080010">
+                    <br>
+                    <input class="input-info-right-right" type="tel" value="+57 300 541 4382">
+                    <br>
+                    <input class="input-info-right-right" type="text" value="Yamil Escorcia">
+                </div>
+            </div>
+        </div>
+        <hr id="hrxd">
+        <table class="table" id="tabla_factura">
+            <thead>
+                <tr class="tr-title">
+                    <th>#</th>
+                    <th>Artículo</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Descuento</th>
+                    <th>Iva</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="productos calcular" style="font-size: 13.3px;">
+                <tr id="fila_clon" class="campo_calcular">
+                    <th><input style="width: 35px; text-align: center;" class="th-input cod_producto" title="Indice del producto en la factura." type="tel" value="0" disabled></th>
+                    <th><div style="max-width: 160px;" class="th-body-left th-input" title="Introduzca el nombre o descripción del producto." type="text" contenteditable="true"></div>
+                    <th><input style="width: 70px; text-align: center;" class="th-body-right th-input cantidad" title="Ingrese la cantidad del producto." type="tel"></th>
+                    <th><input style="width: 75px;" class="th-body-right th-input campo_precio" title="Ingrese el valor unitario del producto." type="tel"></th>
+                    <th><input style="width: 25px;" class="th-body-right th-input campo_descuento" title="Ingrese el descuento del producto." type="tel"></th>
+                    <th><input style="width: 15px;" class="th-body-right th-input campo_iva" type="tel" title="Iva fijo del producto."></th>
+                    <th><input style="width: 89px;" class="th-body-right th-input valortotal" type="tel" title="Total del producto." disabled></th>
+                    <th><button class="button-remove remove-file" title="Eliminar"></button></th>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <button class="add-file">Añadir nuevo item</button>
+        <table class="table-end">
+            <tr>
+                <td style="border-bottom: 2px solid var(--color-main-text);">Subtotal:</td>
+                <td style="border-bottom: 2px solid var(--color-main-text);">
+                    <input style="text-align: right;" class="th-input subtotaldown" type="text" disabled>
+                </td>
+            </tr>
+            <tr style="color: var(--color-red);">
+                <td>Total:</td>
+                <td>
+                    <input style="text-align: right;" class="th-input totaldown" type="text" disabled>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

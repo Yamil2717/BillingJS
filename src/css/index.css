@@ -1,0 +1,183 @@
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+    --color-dark: #121212;
+    --color-gray: #232323;
+    --color-main-text: #ccc;
+    --color-red: #FF4444;
+    --color-dark-red: #cc3636;
+    --color-green: #008000;
+    --color-dark-green: #006600;
+    --color-yellow: #DAA520;
+    --color-dark-yellow: #ae8419;
+    cursor: pointer;
+}
+
+.body {
+    background-color: var(--color-gray);
+}
+
+.box-content {
+    width: 820px;
+    height: auto;
+    padding: 50px 65px;
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    padding-bottom: 126px;
+    background-color: var(--color-dark);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.company-name {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 28px;
+    padding-top: 20px;
+    padding-bottom: 90px;
+    color: var(--color-main-text);
+}
+
+.text-invoice {
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--color-main-text);
+}
+
+.text-id-invoice {
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--color-gray);
+}
+
+.info-shipped {
+    margin-top: 40px;
+    position: relative;
+    color: var(--color-main-text);
+}
+
+.info-left {
+    position: relative;
+}
+
+.text-info-left {
+    width: 150px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.info-left-right {
+    position: absolute;
+    left: 160px;
+    top: 0;
+}
+
+.input-info-left-right,
+.input-info-right-right {
+    width: 130px;
+    height: 20px;
+    border: none;
+    font-size: 14px;
+    font-size: 100%;
+    background: none;
+    display: inline-block;
+    color: var(--color-main-text);
+}
+
+.info-right {
+    top: -25px;
+    left: 345px;
+    position: absolute;
+}
+
+.info-right-right {
+    position: absolute;
+    top: 23px;
+    left: 160px;  
+}
+
+.input-info-right-right {
+    width: 180px;
+    text-decoration: underline;
+}
+
+#hrxd {
+    margin-top: 50px;
+}
+
+.table {
+    width: 690px;
+    color: var(--color-main-text);
+    margin-bottom: 20px;
+}
+
+.tr-title {
+    text-align: center;
+}
+
+.th-body-left {
+    text-align: left;
+}
+
+.th-body-right {
+    text-align: right;
+}
+
+.th-input {
+    height: auto;
+    border: none;
+    background: none;
+    color: var(--color-main-text);
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--color-gray);
+}
+
+.button-remove {
+    width: 18px;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-dark-red);
+}
+
+.add-file {
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 25px;
+    color: var(--color-gray);
+    background-color: var(--color-green);
+    border: 1px solid var(--color-dark-green);
+}
+
+.table-end {
+    width: 255px;
+    right: 65px;
+    bottom: 50px;
+    height: auto;
+    font-size: 18px;
+    position: absolute;
+    color: var(--color-main-text);
+}
+
+.table-end tr td:nth-child(2){
+    text-align: right;
+}
